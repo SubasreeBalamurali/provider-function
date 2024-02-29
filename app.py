@@ -66,11 +66,10 @@ import urllib.parse
 
 '''
 # Original password with "@" symbol
-password = "MyslJ3@iwin"
+password = "password@123"
 
-# Encode the password
+# Encoded password
 encoded_password = urllib.parse.quote_plus(password)
 
-# Construct the database URI with the encoded password
 app.config['SQLALCHEMY_DATABASE_URI'] = f'mysql+pymysql://root:{encoded_password}@localhost/user_test'
 '''
