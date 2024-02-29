@@ -4,7 +4,7 @@ import urllib.parse
 
 app = Flask(__name__)
 
-password = "MyslJ3@iwin"
+password = "password@123"
 encoded_password = urllib.parse.quote_plus(password)
 
 #old sql db
